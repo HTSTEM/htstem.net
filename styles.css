@@ -46,6 +46,7 @@ html, body {
     display: inline-block;
 }
 #discord-indicator {
+    margin-top: 7px;
     height: 25px;
     /*float: left;
     position: absolute;
@@ -54,9 +55,9 @@ html, body {
 }
 #side {
     background-color: #313438;
-    padding: 2px;
     width: 1px;
     height: 100%;
+    padding: 10px 5px 5px;
 }
 
 #wrapper {
