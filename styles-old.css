@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #d5e1f2;
+    color: #262626;
+    text-align: center;
+}
+
+#header-div {
+    width: 100%;
+    text-align: left;
+    background-color: #2c2f33;
+    color: #FFF;
+
+    height: 1.5em;
+    font-size: 50px;
+
+    vertical-align: middle;
+    position: relative;
+
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#header-logo {
+    display: inline-block;
+    height: 1.5em;
+    width: 1.5em;
+    float: left;
+}
+
+#header-text {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    line-height: 1em;
+    font-size: 0.75em;
+    display: none;
+    transform: translateY(-50%);
+}
+
+#links ul li {
+    display: inline;
+    font-size: 0.5em;
+}
+#links ul p {
+    display: inline;
+    font-size: 0.75em;
+    color: #AAA;
+}
+#links {
+    float: left;
+    margin-right: 5px;
+}
+
+
+#body-wrapper {
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+}
+
+#sidebar {
+    width: 15%;
+    height: 100%;
+    background-color: #bfc9d9;
+    float: left;
+}
+#content {
+}
+#discord-indicator {
+    margin-top: 7px;
+    height: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#news {
+    min-width: 250px;
+    max-height: 100%;
+}
+
+.news {
+    min-width: 100%;
+    min-height: 100px;
+    border-radius: 3px;
+    background-color: #cfd8e6;
+    border: 2px solid #acb4bf;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: left;
+}
+.author {
+    background-color: #bac3d1;
+    text-align: left;
+    padding: 3px;
+    font-size: 1.5em;
+}
+.user-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.news img {
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+.bottersnike {
+    background-image: url("https://cdn.discordapp.com/avatars/161508165672763392/1a0a73a9c722eb87463071f3032a9ce3.png?size=32");
+}
+.zwei {
+    background-image: url("https://cdn.discordapp.com/avatars/100764870617624576/e459bcaf749038ab18b5c8cababf0f54.png?size=32");
+}
+.noahkiq {
+    background-image: url("https://cdn.discordapp.com/avatars/140564059417346049/a_2a50c294768489381ba924a9aab9a9c5.png?size=32");
+}
+.adamthedog {
+    background-image: url("https://cdn.discordapp.com/avatars/210907256068374529/665afa4c6fc56ab9aeeb9eaea555f9a7.png?size=32");
+}
+
+/*
+#header {
+margin:auto;
+
+text-align: center;
+background-color: #2c2f33;
+color: #FFF;
+
+height: 15%;
+min-height: 50px;
+font-size: 50px;
+
+vertical-align: middle;
+position: relative;
+
+font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#content {
+text-align: center;
+
+background-color: #36393e;
+color: #FFF;
+width: 99%;
+}
+
+#header-logo {
+display: block;
+height: 2em;
+width: 2em;
+}
+
+#header-text {
+display: block;
+}
+#discord-indicator {
+margin-top: 7px;
+height: 25px;
+font-family: 'Josefin Sans', sans-serif;
+/*float: left;
+position: absolute;
+top: 5px;
+left: 5px;*\/
+}
+#side {
+background-color: #313438;
+width: 1px;
+
+padding: 10px 5px 5px;
+}
+
+#wrapper {
+width: 100%;
+height: 100%;
+}
+#footer {
+background-color: #3d4145;
+font-size: 1.25em;
+}
+
+#news {
+min-width: 250px;
+}
+.news {
+min-width: 100%;
+min-height: 100px;
+border-radius: 3px;
+background-color: #2c2f33;
+border: 2px solid #0f1012;
+box-sizing: border-box;
+margin-top: 2px;
+margin-bottom: 2px;
+text-align: left;
+}
+.author {
+background-color: #41454d;
+text-align: left;
+padding: 3px;
+font-size: 1.5em;
+}
+.user-icon {
+width: 32px;
+height: 32px;
+border-radius: 16px;
+display: inline-block;
+margin-right: 5px;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Roboto', sans-serif;
+}
+.bottersnike {
+background-image: url("https://cdn.discordapp.com/avatars/161508165672763392/1a0a73a9c722eb87463071f3032a9ce3.png?size=32");
+}
+.zwei {
+background-image: url("https://cdn.discordapp.com/avatars/100764870617624576/e459bcaf749038ab18b5c8cababf0f54.png?size=32");
+}
+.noahkiq {
+background-image: url("https://cdn.discordapp.com/avatars/140564059417346049/a_2a50c294768489381ba924a9aab9a9c5.png?size=32");
+}
+.adamthedog {
+background-image: url("https://cdn.discordapp.com/avatars/210907256068374529/665afa4c6fc56ab9aeeb9eaea555f9a7.png?size=32");
+}
+*/
