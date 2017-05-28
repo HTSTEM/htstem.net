@@ -13,8 +13,9 @@ html,body,.body-content {
     box-sizing: border-box;
 }
 header {
-    background: #2c2f33;
-    height: 75px;
+    background: #2c2f33 !important;
+    height: 75px !important;
+    border-radius: 0 !important;
 }
 
 .row {
@@ -35,6 +36,34 @@ header {
 }
 
 
+#nav-links {
+    position: absolute;
+    top: 0;
+    left: 75px;
+    color: #CCC;
+    text-align: center;
+    padding: 0 0 0 5px;
+}
+#nav-links li {
+    display: inline-block;
+    line-height: 75px;
+    padding-left: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+}
+#nav-links li:hover {
+    color: #FFF;
+}
+#nav-links li.muted-pipe:hover {
+    color: #CCC;
+}
+
+.muted-pipe {
+    font-size: 60px !important;
+    line-height: 60px !important;
+    opacity: 0.5;
+}
+
 #header-logo {
     height: 65px;
     margin: 5px;
@@ -51,7 +80,14 @@ header {
     height: 30px;
 }
 
-
+@media (max-width: 767px) {
+    #nav-links li {
+        font-size: 15px;
+    }
+    #discord-indicator {
+        height: 20px;
+    }
+}
 #news {
     padding-bottom: 5px;
 }
