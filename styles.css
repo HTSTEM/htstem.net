@@ -76,4 +76,38 @@ p {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-
+#news {
+    min-width: 250px;
+}
+.news {
+    min-width: 100%;
+    min-height: 100px;
+    border-radius: 3px;
+    background-color: #2c2f33;
+    border: 2px solid #0f1012;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.author {
+    background-color: #41454d;
+    text-align: left;
+    padding: 3px;
+    font-size: 1.5em;
+}
+.user-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.bottersnike {
+    background-image: url("https://cdn.discordapp.com/avatars/161508165672763392/1a0a73a9c722eb87463071f3032a9ce3.png?size=32");
+}
+.zwei {
+    background-image: url("https://cdn.discordapp.com/avatars/100764870617624576/e459bcaf749038ab18b5c8cababf0f54.png?size=32");
+}
+.noahkiq {
+    background-image: url("https://cdn.discordapp.com/avatars/140564059417346049/a_2a50c294768489381ba924a9aab9a9c5.png?size=32");
+}
