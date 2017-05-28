@@ -26,6 +26,8 @@ html, body {
 
     vertical-align: middle;
     position: relative;
+    
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -36,14 +38,18 @@ html, body {
     color: #FFF;
     width: 99%;
 }
+p {
+    font-family: 'Open Sans', sans-serif;
+}
 
 #header-logo {
-    display: inline-block;
-    height: 75%;
+    display: block;
+    height: 2em;
+    width: 2em;
 }
 
 #header-text {
-    display: inline-block;
+    display: block;
 }
 #discord-indicator {
     margin-top: 7px;
@@ -66,6 +72,8 @@ html, body {
 }
 #footer {
     background-color: #3d4145;
+    font-size: 1.25em;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
