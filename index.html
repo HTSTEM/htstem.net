@@ -42,6 +42,35 @@
                             style="opacity:0.1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"></path>
                 </g>
             </svg>
+
+            <svg id="discord-indicator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 20">
+                <linearGradient id="b" x2="0" y2="100%">
+                    <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+                    <stop offset="1" stop-opacity=".1"></stop>
+                </linearGradient>
+
+                <clipPath id="a">
+                    <rect width="135" height="20" rx="3" fill="#fff"></rect>
+                </clipPath>
+
+                <g clip-path="url(#a)">
+                    <path fill="#738bd7" d="M0 0 h 42 v 20 H 0 z"></path>
+
+                    <path fill="#4c1" d="M41 0 h 60 v 20 H 41 Z"></path>
+                    <path fill="#dfb317" d="M96 0 h 90 v 20 H 96 Z"></path>
+
+                    <path fill="url(#b)" d="M0 0 h 200 v 20 H 0 z"></path>
+                </g>
+                <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+                    <text x="20.5" y="15" fill="#010101" fill-opacity=".3">Discord:</text>
+                    <text x="20.5" y="14">Discord:</text>
+                    <text id="txt1" x="68.5" y="15" fill="#010101" fill-opacity=".3">0 online</text>
+                    <text id="txt2" x="68.5" y="14">0 online</text>
+
+                    <text id="txt3" x="113.5" y="15" fill="#010101" fill-opacity=".3">0 idle</text>
+                    <text id="txt4" x="113.5" y="14">0 idle</text>
+                </g>
+            </svg>
         </header>
 
         <div class="container body-content">
@@ -93,6 +122,8 @@
                 </div>
 
                 <div class="col-xs-12 col-md-10 no-float">
+
+
                     <h1>HTwins STEM Official Website</h1>
                     <h2>Soon, this page will probably contain many
                         community projects and server news.<br>
@@ -150,5 +181,45 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            /*
+             Hey! Who are you looking at? At least it works.
+             */
+
+            /**
+             * @return {string}
+             */
+            function Get(yourUrl){
+                var Httpreq = new XMLHttpRequest(); // a new request
+                Httpreq.open("GET", yourUrl, false);
+                Httpreq.send(null);
+                return Httpreq.responseText;
+            }
+
+            // Send a GET to the DAPI to get the server information
+            var json_obj = JSON.parse(Get("https://canary.discordapp.com/api/guilds/282219466589208576/widget.json"));
+
+            // Count the idle users
+            var idle = 0;
+            var online = json_obj.members.length;
+            for (var i = 0; i < online; i ++) {
+                if (json_obj.members[i].status == "idle") {
+                    idle++;
+                }
+            }
+
+            // Locate the SVG text elelemts
+            var txt1 = document.getElementById("txt1");
+            var txt2 = document.getElementById("txt2");
+            var txt3 = document.getElementById("txt3");
+            var txt4 = document.getElementById("txt4");
+
+            // Set the elements values
+            txt1.innerHTML = online + " online,";
+            txt2.innerHTML = online + " online,";
+            txt3.innerHTML = idle + " idle";
+            txt4.innerHTML = idle + " idle";
+        </script>
     </body>
 </html>

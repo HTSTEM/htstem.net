@@ -44,6 +44,13 @@ header {
     background-color: #e6e6e6;
 }
 
+#discord-indicator {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 30px;
+}
+
 
 #news {
     padding-bottom: 5px;
