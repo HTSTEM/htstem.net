@@ -44,6 +44,9 @@ header {
     text-align: center;
     padding: 0 0 0 5px;
 }
+#nav-links li a {
+    color: #CCC;
+}
 #nav-links li {
     display: inline-block;
     line-height: 75px;
@@ -51,8 +54,9 @@ header {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
 }
-#nav-links li:hover {
+#nav-links li *:hover {
     color: #FFF;
+    text-decoration: none;
 }
 #nav-links li.muted-pipe:hover {
     color: #CCC;
