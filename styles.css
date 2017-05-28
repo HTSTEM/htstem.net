@@ -46,6 +46,7 @@ header {
 }
 #nav-links li a {
     color: #CCC;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #nav-links li {
     display: inline-block;
