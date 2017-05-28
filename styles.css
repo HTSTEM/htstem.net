@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     border: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     border-collapse: collapse;
 }
 html, body {
@@ -38,9 +38,6 @@ html, body {
     color: #FFF;
     width: 99%;
 }
-p {
-    font-family: 'Open Sans', sans-serif;
-}
 
 #header-logo {
     display: block;
@@ -54,6 +51,7 @@ p {
 #discord-indicator {
     margin-top: 7px;
     height: 25px;
+    font-family: 'Josefin Sans', sans-serif;
     /*float: left;
     position: absolute;
     top: 5px;
@@ -73,13 +71,10 @@ p {
 #footer {
     background-color: #3d4145;
     font-size: 1.25em;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 #news {
     min-width: 250px;
-
-
 }
 .news {
     min-width: 100%;
@@ -104,6 +99,9 @@ p {
     border-radius: 16px;
     display: inline-block;
     margin-right: 5px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
 }
 .bottersnike {
     background-image: url("https://cdn.discordapp.com/avatars/161508165672763392/1a0a73a9c722eb87463071f3032a9ce3.png?size=32");
