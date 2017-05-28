@@ -62,7 +62,7 @@ p {
 #side {
     background-color: #313438;
     width: 1px;
-    height: 100%;
+
     padding: 10px 5px 5px;
 }
 
@@ -78,6 +78,8 @@ p {
 
 #news {
     min-width: 250px;
+
+
 }
 .news {
     min-width: 100%;
@@ -88,6 +90,7 @@ p {
     box-sizing: border-box;
     margin-top: 2px;
     margin-bottom: 2px;
+    text-align: left;
 }
 .author {
     background-color: #41454d;
@@ -110,4 +113,7 @@ p {
 }
 .noahkiq {
     background-image: url("https://cdn.discordapp.com/avatars/140564059417346049/a_2a50c294768489381ba924a9aab9a9c5.png?size=32");
+}
+.adamthedog {
+    background-image: url("https://cdn.discordapp.com/avatars/210907256068374529/665afa4c6fc56ab9aeeb9eaea555f9a7.png?size=32");
 }
