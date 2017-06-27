@@ -8,17 +8,14 @@ body, html {
     width: 100%
 }
 
-.content-section {
-    background: url(../img/main-bg.jpg) bottom center repeat #7289D9;
+@media (max-width: 768px) {
+    nav {
+        background: #000 !important;
+    }
 }
+
 body {
     background: url(../img/bg.png) bottom center repeat #7289D9;
-}
-.container {
-    width: 100%;
-    margin: 0;
-    padding-left: 20%;
-    padding-right: 20%;
 }
 
 .intro, body, html {
